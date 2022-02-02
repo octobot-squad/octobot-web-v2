@@ -1,0 +1,47 @@
+<!-- Start FunFacts Area -->
+<section class="funfacts-area ptb-110">
+    {% for rs in total_latest %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="single-funfacts">
+                    <div class="circlechart" data-percentage="{{ rs.n1 }}"></div>
+                    <span>Design</span>
+                    <h3>Codes</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="single-funfacts">
+                    <div class="circlechart" data-percentage="{{ rs.n2 }}"></div>
+                    <span>Our happy</span>
+                    <h3>Clients</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="single-funfacts">
+                    <div class="circlechart" data-percentage="{{ rs.n3 }}"></div>
+                    <span>Projects</span>
+                    <h3>Design</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="single-funfacts">
+                    <div class="circlechart" data-percentage="{{ rs.n4 }}"></div>
+                    <span>Completed</span>
+                    <h3>Projects</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</section>
+<!-- End FunFacts Area -->

@@ -1,0 +1,290 @@
+{% load static %}
+
+<div class="main-banner">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="main-banner-content">
+                            <span>Artificial Intelligence (AI)</span>
+                            <h1>Work smarter, together.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="main-banner-image">
+                            <img src="{% static 'assets/img/banner-img1.png' %}" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-shape"><img src="{% static 'assets/img/white-shape.png' %}" alt="image"></div>
+    <div class="shape1"><img src="{% static 'assets/img/shape/2.png' %}" alt="image"></div>
+    <div class="shape2"><img src="{% static 'assets/img/shape/3.png' %}" alt="image"></div>
+</div>
+<!-- End Main Banner Area -->
+
+<!-- Start Featured Solutions Area -->
+<section class="featured-solutions-area ptb-110">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our featured solutions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-featured-solutions">
+                    <img src="{% static 'assets/img/solutions/1.png' %}" alt="image">
+
+                    <h3>Departments</h3>
+                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                        adipiscing aliqua.</p>
+                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-featured-solutions">
+                    <img src="{% static 'assets/img/solutions/2.png' %}" alt="image">
+
+                    <h3>Industries</h3>
+                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                        adipiscing aliqua.</p>
+                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                <div class="single-featured-solutions">
+                    <img src="{% static 'assets/img/solutions/3.png' %}" alt="image">
+
+                    <h3>Technology</h3>
+                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                        adipiscing aliqua.</p>
+                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Featured Solutions Area -->
+
+<!-- Start Features Area -->
+<section class="features-area ptb-110 bg-f7f9fc">
+    <div class="container">
+        <div class="overview-box">
+            <div class="image wow zoomIn" data-wow-delay="1s">
+                <img src="{% static 'assets/img/1.png' %}" alt="image">
+            </div>
+
+            <div class="content">
+                <h3>Make your business more competitive and sustainable.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                <ul class="features-list">
+                    <li><span><i class='bx bx-check-double'></i> Influencing Sales</span></li>
+                    <li><span><i class='bx bx-check-double'></i> Generating Insights</span></li>
+                    <li><span><i class='bx bx-check-double'></i> Engaging Customer</span></li>
+                    <li><span><i class='bx bx-check-double'></i> Boosting Operations</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="overview-box">
+            <div class="content">
+                <h3>Do what matters and we'll handle the back office routine.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                <ul class="features-list">
+                    <li><span><i class='bx bx-check-double'></i> Fully Support</span></li>
+                    <li><span><i class='bx bx-check-double'></i> Reliable & Cost Effective</span></li>
+                    <li><span><i class='bx bx-check-double'></i> Dedicated Developers</span></li>
+                    <li><span><i class='bx bx-check-double'></i> 100% Customer Satisfaction</span></li>
+                </ul>
+            </div>
+
+            <div class="image wow zoomIn" data-wow-delay="1s">
+                <img src="{% static 'assets/img/2.png' %}" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="rectangle-shape1"><img src="{% static 'assets/img/rectangle-shape1.png' %}" alt="image"></div>
+    <div class="rectangle-shape2"><img src="{% static 'assets/img/rectangle-shape2.png' %}" alt="image"></div>
+</section>
+<!-- End Features Area -->
+
+{% block total %}{% include 'components/total.html' %}{% endblock %}
+
+<!-- Start Services Area -->
+<section class="services-area ptb-110 bg-fafafa pb-0">
+    <div class="container">
+        <div class="section-title">
+            <h2>See wide range of our services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img src="{% static 'assets/img/services/plug.png' %}" alt="image">
+                    </div>
+                    <h3><a href="#">Machine Learning</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img src="{% static 'assets/img/services/drone.png' %}" alt="image">
+                    </div>
+                    <h3><a href="#">Robotics And Drones</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img src="{% static 'assets/img/services/sensor.png' %}" alt="image">
+                    </div>
+                    <h3><a href="#">Image Processing</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img src="{% static 'assets/img/services/database.png' %}" alt="image">
+                    </div>
+                    <h3><a href="#">AI For Cloud Services</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img src="{% static 'assets/img/services/augmented-reality.png' %}" alt="image">
+                    </div>
+                    <h3><a href="#">Virtual Reality</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <img src="{% static 'assets/img/services/deep.png' %}" alt="image">
+                    </div>
+                    <h3><a href="#">Deep Learning</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-shape"><img src="{% static 'assets/img/services-shape.png' %}" alt="image"></div>
+</section>
+<!-- End Services Area -->
+
+<!-- Start Serve Area -->
+<section class="serve-area ptb-110">
+    <div class="container">
+        <div class="section-title">
+            <h2>Industries We Serve</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-factory"></i>
+                    <h3>Manufacturing</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-hospital"></i>
+                    <h3>Healthcare</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-tracking"></i>
+                    <h3>Automobile</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-money-bag"></i>
+                    <h3>Banking</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-house"></i>
+                    <h3>Real Estate</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-box"></i>
+                    <h3>Logistics</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-insurance"></i>
+                    <h3>Insurance</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="single-serve-box">
+                    <i class="flaticon-bitcoin"></i>
+                    <h3>Capital Markets</h3>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Serve Area -->

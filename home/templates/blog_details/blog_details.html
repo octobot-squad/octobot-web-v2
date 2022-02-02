@@ -1,0 +1,67 @@
+{% load static %}
+<!-- Start Page Title Area -->
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>{{ blog.title }}</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Blog Details</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Blog Details Area -->
+<section class="blog-details-area ptb-110">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="blog-details">
+                    <div class="article-image">
+                        <img src="{{ blog.image.url }}" alt="image">
+                    </div>
+
+                    <div class="article-content">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="far fa-user-circle"></i>Admin</li>
+
+                                <li><i class="far fa-calendar-alt"></i> {{ blog.create_on_date }}</li>
+
+                                <li><i class="far fa-clock"></i> {{ blog.create_on_time }}</li>
+                            </ul>
+                        </div>
+                        <h3>{{ blog.title }}</h3>
+
+                        <p>{{ blog.orta_description }}</p>
+
+                        <p>{{ blog.past_description }}</p>
+                        <p>{{ blog.paragraph_3 }}</p>
+                        <p>{{ blog.paragraph_4 }}</p>
+
+                    </div>
+
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <span><i class="fas fa-bookmark"></i></span>
+
+                            <a href="#">Octobot Squad</a>
+                        </div>
+
+                        <div class="article-share">
+                            <ul class="social">
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog Details Area -->

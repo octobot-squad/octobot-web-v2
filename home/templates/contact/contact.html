@@ -1,0 +1,125 @@
+{% load static %}
+
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Contact Area -->
+<section class="contact-area ptb-110">
+    <div class="container">
+        <div class="section-title">
+            <span>Contact Us</span>
+            <h2>Drop us Message for any Query</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-4">
+                <div class="contact-image">
+                    <img src="{% static 'assets/img/contact.png' %}" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8">
+                <div class="contact-form">
+                    <form action="{% url 'contact' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    {{ form.name }}
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    {{ form.email }}
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    {{ form.phone }}
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    {{ form.subject }}
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    {{ form.message }}
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button class="btn btn-primary" type="submit">Xabarni jo'natish</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+
+                    <h3>Email Here</h3>
+                    <p>
+                        <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#5e3f3a3337301e3b2831322a3f703d3133"><span
+                                class="__cf_email__" data-cfemail="18797c757176587d6e77746c79367b7775">[email&#160;protected]</span></a>
+                    </p>
+                    <p>
+                        <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#2f464149406f4a5940435b4e014c4042"><span
+                                class="__cf_email__" data-cfemail="80e9eee6efc0e5f6efecf4e1aee3efed">[email&#160;protected]</span></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i class='bx bx-map'></i>
+                    </div>
+
+                    <h3>Location Here</h3>
+                    <p>2750 Quadra Street Victoria, New York, <br> Canada</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i class='bx bx-phone-call'></i>
+                    </div>
+
+                    <h3>Call Here</h3>
+                    <p><a href="tel:1234567890">+123 456 7890</a></p>
+                    <p><a href="tel:2414524526">+241 452 4526</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Area -->

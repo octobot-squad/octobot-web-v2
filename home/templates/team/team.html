@@ -1,0 +1,44 @@
+{% load static %}
+
+<!-- Start Page Title Area -->
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Team</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Team</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Page Title Area -->
+
+<!-- Start Team Area -->
+<section class="team-area ptb-110">
+    <div class="container">
+        <div class="row">
+            {% for rs in team_latest %}
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team-box">
+                        <div class="image">
+                            <img src="{{ rs.image.url }}" alt="team">
+
+                            <div class="social">
+                                <a href="tel://{{ rs.phone }}" target="_blank"><i class="fas fa-phone"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h3>{{ rs.name }}</h3>
+                            <span>{{ rs.category }}</span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End Team Area -->
